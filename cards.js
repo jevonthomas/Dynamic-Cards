@@ -38,7 +38,8 @@ function createCard(userInput) {
 		//Event Listener for delete button
 		deleteArray[i].addEventListener("click", function() {
 			//Targets the specific button that the event took place on and remove its parent
-			document.getElementById("output").removeChild(event.target.parentNode);
+			// document.getElementById("output").removeChild(event.target.parentNode);
+			event.target.parentNode.remove();
 		});
 	}
 }
